@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+      <div class="gridim">
+        <span><button class="button-left" onclick="plusDivs(-1)">&#10094;</button></span>
+        <span><button class="button-right" onclick="plusDivs(1)">&#10095;</button></span>
+        </div>
+        <div>
+               
+        
+        <div class="mySlides">
+          <p>Post</p>
+                <form method="POST" action="http://localhost:3000/posts">
+                    <p>Имя: <br><input type="text" name="name"></p>
+                    <p>Сообщение:<br><textarea name="message"></textarea></p>
+                    <p><button type="submit">Отправить </button></p>
+                  </form>
+        </div>
+        
+        <div class="mySlides" id="GetPost">
+          <p>Get</p>
+          <form method="GET" action="http://localhost:3000/posts/">
+          
+            <p><button type="submit">Получить </button></p>
+          </form>
+         
+        </div>
+        
+        <div class="mySlides">
+         <p>Delete</p>
+         <form method="DELETE" action="http://localhost:3000/posts/1">
+          
+          <p><button type="submit">Удалить все к чертям </button></p>
+        </form>
+        </div>
+      <script src="jscript.js"></script>
+</body>
+</html>
